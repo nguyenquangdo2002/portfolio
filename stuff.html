@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .img-cup {
+        width: 100px;
+      }
+      .mockup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        background: url(img/cup.png) no-repeat,
+          url(img/3background.jpg) 330px 0px;
+        background-blend-mode: multiply;
+        -webkit-mask-image: url(img/cup.png);
+        -webkit-mask-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mockup"></div>
+    <img class="img-cup" src="img/cup.png" alt="" />
+    <!-- <img src="/img/cup.png" alt="" />
+    <img src="/img/3background.jpg" alt="" /> -->
+  </body>
+</html>
